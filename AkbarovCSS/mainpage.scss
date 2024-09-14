@@ -20,18 +20,6 @@ body{
     background-color: var(--colorGray);
 }
 
-.header{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -20px;
-
-    &__title{
-        color: var(--colorLightBlue);
-        font-size: 40px;
-    }
-}
-
 .nav{
     margin-top: -25px;
     background-color: #024b58;
@@ -59,43 +47,88 @@ body{
     }
 }
 
-.main{
+.header{
     display: flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    gap: 60px;
 
-    &__section{
-        width: 850px;
-        min-height: 150px;
-        background-color: var(--colorLightBlue);
-        padding: 0 20px;
-        border: 5px solid var(--colorBlue);
-        border-radius: 20px;
-
-        &:hover{
-            box-shadow: 0px 0px 60px 30px rgba(69, 162, 158, 0.5);
-            transition: 2s;
-        }
+    &__title{
+        color:white;
     }
 
-    &__please{
-        text-align: center;
-        color:var(--colorLightGray);
+    ul{
+        list-style-type: none;
+        font-size: 20px;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        gap:90px;
+        font-weight: 400;
+        margin-top: -8px;
 
-        &-contact{
+        a{
+            color:var(--colorLightGray);
             text-decoration: none;
-            font-size: 20px;
-            color: var(--colorLightBlue);
 
             &:hover{
-                color:var(--colorBlue);
-                text-shadow: 0px 0px 20px rgba(102, 252, 241, 0.3);
+                color: var(--colorBlue);
                 transition: .3s;
             }
         }
     }
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:70px;
+    margin-top: 30px;
+
+    &__section{
+        width: 1200px;
+        background-color: #213234;
+        border: 4px solid #3b7a83;
+        border-radius: 20px;
+        padding: 10px 30px;
+
+        &-title{
+            color: var(--colorLightBlue);
+        }
+
+        &-text{
+            color: var(--colorBlue);
+        }
+        pre{
+            background-color: var(--colorBlack);
+            color: white;
+            width: 500px;
+        }
+        &-code{
+            background-color: var(--colorBlack);
+        }
+
+        &-table{
+            width: 100%;
+            border-collapse: collapse;
+            border: 3px solid #425277;
+            color:#66fcf1;
+        }
+
+        th, td{
+            border: 3px solid #425277;
+            padding: 10px;
+        }
+        th{
+            background-color: #092321;
+        }
+        td{
+            background-color: #273b42;
+        }
+    }
+
 }
 
 .footer{
