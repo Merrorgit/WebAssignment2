@@ -74,7 +74,12 @@ body {
     border-radius: 20px;
     padding: 10px 30px; }
     .main__section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
       color: var(--colorLightBlue); }
+      .main__section-title-img {
+        width: 20px; }
     .main__section-text {
       color: var(--colorBlue); }
     .main__section pre {

@@ -95,7 +95,14 @@ body{
         padding: 10px 30px;
 
         &-title{
+            display: flex;
+            align-items: center;
+            gap: 10px;
             color: var(--colorLightBlue);
+
+            &-img{
+                width: 20px
+            }
         }
 
         &-text{
