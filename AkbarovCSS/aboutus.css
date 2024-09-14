@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --colorBlack: #0b0c10;
   --colorGray: #1f2833;
@@ -58,7 +59,7 @@ body {
     border-radius: 20px; }
     .main__section:hover {
       box-shadow: 0px 0px 60px 30px rgba(69, 162, 158, 0.5);
-      transition: 2s; }
+      transition: 2sпше; }
   .main__please {
     text-align: center;
     color: var(--colorLightGray); }
